@@ -1,0 +1,49 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Rate my Avatar GUI | Cranium#9090, disrelic#3322", "Ocean")
+
+local Tab = Window:NewTab("Booth")
+local Section = Tab:NewSection("Normal Stuff")
+Section:NewButton("Time", "wtf", function()
+    local args = {
+        [1] = game.Players.LocalPlayer.ValoresJugador.Dinero,
+        [2] = game.Players.LocalPlayer.ValoresJugador.TiempoExtra,
+        [3] = 0,
+        [4] = 1000000
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("ComprarTiempo"):FireServer(unpack(args))
+end)
+Section:NewButton("Jumps", "wtf", function()
+    local args = {
+        [1] = game.Players.LocalPlayer.ValoresJugador.Dinero,
+        [2] = 0,
+        [3] = game.Players.LocalPlayer.ValoresJugador.SaltosExtra,
+        [4] = 1000000
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("ComprarSalto"):FireServer(unpack(args))
+end)
+Section:NewButton("Initial Score", "wtf", function()
+    local args = {
+        [1] = game.Players.LocalPlayer.ValoresJugador.Dinero,
+        [2] = 0,
+        [3] = game.Players.LocalPlayer.ValoresJugador.ScoreInicial,
+        [4] = 1000000
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("ComprarSalto"):FireServer(unpack(args))
+end)
+Section:NewToggle("Easy Money", "e", function(state)
+    if state then
+        hcond = true
+    while hcond==true do
+        local args = {
+            [1] = game.Players.LocalPlayer.ValoresJugador.Recompensa,
+            [2] = game.Players.LocalPlayer.Character.Configuracion.Score,
+            [3] = game.Players.LocalPlayer.ValoresJugador.ScoreInicial
+        }
+        game.ReplicatedStorage.EventoScoreInicial:FireServer(unpack(args))
+        task.wait()
+    end
+    else
+        hcond = false
+        print("no more money")
+    end
+end)
