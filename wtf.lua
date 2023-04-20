@@ -10,7 +10,7 @@ Section:NewButton("Time", "wtf", function()
         [3] = 0,
         [4] = 1000000
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("ComprarTiempo"):FireServer(unpack(args))
+    game.ReplicatedStorage.ComprarTiempo:FireServer(unpack(args))
 end)
 Section:NewButton("Jumps", "wtf", function()
     local args = {
@@ -19,7 +19,7 @@ Section:NewButton("Jumps", "wtf", function()
         [3] = game.Players.LocalPlayer.ValoresJugador.SaltosExtra,
         [4] = 1000000
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("ComprarSalto"):FireServer(unpack(args))
+    game.ReplicatedStorage.ComprarSalto:FireServer(unpack(args))
 end)
 Section:NewButton("Initial Score", "wtf", function()
     local args = {
@@ -28,7 +28,29 @@ Section:NewButton("Initial Score", "wtf", function()
         [3] = game.Players.LocalPlayer.ValoresJugador.ScoreInicial,
         [4] = 1000000
     }
-    game:GetService("ReplicatedStorage"):WaitForChild("ComprarSalto"):FireServer(unpack(args))
+    game.ReplicatedStorage.ComprarSalto:FireServer(unpack(args))
+end)
+Section:NewButton("Unlock All", "wtf", function()
+    local args = {
+        [1] = 2,
+        [2] = 0
+    }
+    game.ReplicatedStorage.ComprarMundo:FireServer(unpack(args))
+    local args = {
+        [1] = 3,
+        [2] = 0
+    }
+    ame.ReplicatedStorage.ComprarMundo:FireServer(unpack(args))
+    local args = {
+        [1] = 4,
+        [2] = 0
+    }
+    ame.ReplicatedStorage.ComprarMundo:FireServer(unpack(args))
+    local args = {
+        [1] = 5,
+        [2] = 0
+    }
+    ame.ReplicatedStorage.ComprarMundo:FireServer(unpack(args))
 end)
 Section:NewToggle("Easy Money", "e", function(state)
     if state then
