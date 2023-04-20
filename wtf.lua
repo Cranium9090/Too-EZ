@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Rate my Avatar GUI | Cranium#9090, disrelic#3322", "Ocean")
 
-local Tab = Window:NewTab("Booth")
-local Section = Tab:NewSection("Normal Stuff")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
 Section:NewButton("Time", "wtf", function()
     local args = {
         [1] = game.Players.LocalPlayer.ValoresJugador.Dinero,
