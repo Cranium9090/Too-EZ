@@ -132,3 +132,33 @@ local args = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("TroopChange"):FireServer(unpack(args))
 end)
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("Teleports")
+Section:NewButton("Blue Base", "Teleports you to the blue base", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(5023, 286, -1700)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	task.wait()
+	pl.CFrame = location
+end)
+Section:NewButton("Purple Base", "Teleports you to the purple base", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(4152, 274, -2487)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	task.wait()
+	pl.CFrame = location
+end)
+Section:NewButton("Red Base", "Teleports you to the red base", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(5014, 277, -3274)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	task.wait()
+	pl.CFrame = location
+end)
+Section:NewButton("Green Base", "Teleports you to the green base", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+	local location = CFrame.new(5860, 280, -2527)
+	local humanoid = game.Players.LocalPlayer.Character.Humanoid
+	task.wait()
+	pl.CFrame = location
+end)
