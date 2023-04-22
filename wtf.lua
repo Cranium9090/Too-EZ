@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rate my Avatar GUI | Cranium#9090, disrelic#3322", "Ocean")
+local Window = Library.CreateLib("TOO EZ GUI | Cranium#9090", "Ocean")
 
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
