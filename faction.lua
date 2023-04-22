@@ -27,20 +27,6 @@ local args = {
 }
 game.ReplicatedStorage.Events.Purchase:InvokeServer(unpack(args))
 end)
-Section:NewButton("Save", "wtf", function()
-local person = game:GetService("Players").LocalPlayer.Name
-wait(.1)
-local args = {
-    [1] = person
-}
-game:GetService("ReplicatedStorage"):WaitForChild("StatSave"):FireServer(unpack(args))
-wait(.1)
-local args = {
-    [1] = person
-}
-game:GetService("ReplicatedStorage"):WaitForChild("TycoonSave"):FireServer(unpack(args))
-wait(.1)
-end)
 Section:NewToggle("Kill All Players", "wtf", function(state)
     if state then
         killall = true
@@ -161,4 +147,33 @@ Section:NewButton("Green Base", "Teleports you to the green base", function()
 	local humanoid = game.Players.LocalPlayer.Character.Humanoid
 	task.wait()
 	pl.CFrame = location
+end)
+-- stolen code from one of my other scripts lol
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("other stuff")
+Section:NewButton("Save", "wtf", function()
+local person = game:GetService("Players").LocalPlayer.Name
+wait(.1)
+local args = {
+    [1] = person
+}
+game:GetService("ReplicatedStorage"):WaitForChild("StatSave"):FireServer(unpack(args))
+wait(.1)
+local args = {
+    [1] = person
+}
+game:GetService("ReplicatedStorage"):WaitForChild("TycoonSave"):FireServer(unpack(args))
+wait(.1)
+end)
+Section:NewButton("Rejoin", "rejoins same server", function()
+    local ts = game:GetService("TeleportService")
+	local p = game:GetService("Players").LocalPlayer
+	ts:Teleport(game.PlaceId, p)
+end)
+Section:NewButton("Server Hop", "joins diffrent server", function()
+    local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+	module:Teleport(game.PlaceId)
+end)
+Section:NewKeybind("Open/Close GUI", "sex", Enum.KeyCode.G, function()
+	Library:ToggleUI()
 end)
