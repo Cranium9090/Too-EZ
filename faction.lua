@@ -71,7 +71,7 @@ Section:NewToggle("Kill All Players", "wtf", function(state)
 end)
 local Tab = Window:NewTab("Troops")
 local Section = Tab:NewSection("Attack Mode")
-Section:NewButton("Attack Random", "wtf", function()
+Section:NewButton("Attack Middle", "wtf", function()
 local args = {
     [1] = "Attack"
 }
