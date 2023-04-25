@@ -9,7 +9,7 @@
                                       Cranium#9090
 ]]
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TOO EZ GUI | Cranium#9090", "Ocean")
+local Window = Library.CreateLib("TOO EZ GUI | Cranium#9090", "Sentinel")
 
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
