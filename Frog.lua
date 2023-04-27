@@ -63,6 +63,26 @@ Section:NewDropdown("Single egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Eg
         game.ReplicatedStorage.BuyEgg:FireServer("Egg9")
     elseif currentOption=="Egg 10" then
         game.ReplicatedStorage.BuyEgg:FireServer("Egg10")
+    elseif currentOption=="Egg 11" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg11")
+    elseif currentOption=="Egg 12" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg12")
+    elseif currentOption=="Egg 13" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg13")
+    elseif currentOption=="Egg 14" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg14")
+    elseif currentOption=="Egg 15" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg15")
+    elseif currentOption=="Egg 16" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg16")
+    elseif currentOption=="Egg 17" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg17")
+    elseif currentOption=="Egg 18" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg18")
+    elseif currentOption=="Egg 19" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg19")
+    elseif currentOption=="Egg 20" then
+        game.ReplicatedStorage.BuyEgg:FireServer("Egg20")
     end
 end)
 Section:NewDropdown("Triple Egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4", "Egg 5", "Egg 6", "Egg 7", "Egg 8", "Egg 9", "Egg 10"}, function(currentOption)
@@ -86,6 +106,26 @@ Section:NewDropdown("Triple Egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Eg
         game.ReplicatedStorage.Buy3Egg:FireServer("Egg9")
     elseif currentOption=="Egg 10" then
         game.ReplicatedStorage.Buy3Egg:FireServer("Egg10")
+    elseif currentOption=="Egg 11" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg11")
+    elseif currentOption=="Egg 12" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg12")
+    elseif currentOption=="Egg 13" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg13")
+    elseif currentOption=="Egg 14" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg14")
+    elseif currentOption=="Egg 15" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg15")
+    elseif currentOption=="Egg 16" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg16")
+    elseif currentOption=="Egg 17" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg17")
+    elseif currentOption=="Egg 18" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg18")
+    elseif currentOption=="Egg 19" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg19")
+    elseif currentOption=="Egg 20" then
+        game.ReplicatedStorage.Buy3Egg:FireServer("Egg20")
     end
 end)
 local Section = Tab:NewSection("AutoHatch coming soon :D")
