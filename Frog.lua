@@ -39,9 +39,10 @@ Section:NewToggle("Auto Sell", "Wtf", function(state)
         sellcond=false
     end
 end)
-local Tab = Window:NewTab("Single Eggs")
+local Section = Tab:NewSection("AutoGems Coming Soon :D")
+local Tab = Window:NewTab("Eggs")
 local Section = Tab:NewSection("Manual")
-Section:NewDropdown("Buy egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4", "Egg 5", "Egg 6", "Egg 7", "Egg 8", "Egg 9", "Egg 10"}, function(currentOption)
+Section:NewDropdown("Single egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4", "Egg 5", "Egg 6", "Egg 7", "Egg 8", "Egg 9", "Egg 10"}, function(currentOption)
     if currentOption=="Egg 1" then
         game.ReplicatedStorage.BuyEgg:FireServer("Egg1")
     elseif currentOption=="Egg 2" then
@@ -64,9 +65,7 @@ Section:NewDropdown("Buy egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4
         game.ReplicatedStorage.BuyEgg:FireServer("Egg10")
     end
 end)
-local Tab = Window:NewTab("Triple Eggs")
-local Section = Tab:NewSection("Manual")
-Section:NewDropdown("Buy egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4", "Egg 5", "Egg 6", "Egg 7", "Egg 8", "Egg 9", "Egg 10"}, function(currentOption)
+Section:NewDropdown("Triple Egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4", "Egg 5", "Egg 6", "Egg 7", "Egg 8", "Egg 9", "Egg 10"}, function(currentOption)
     if currentOption=="Egg 1" then
         game.ReplicatedStorage.Buy3Egg:FireServer("Egg1")
     elseif currentOption=="Egg 2" then
@@ -89,3 +88,4 @@ Section:NewDropdown("Buy egg", "DropdownInf", {"Egg 1", "Egg 2", "Egg 3", "Egg 4
         game.ReplicatedStorage.Buy3Egg:FireServer("Egg10")
     end
 end)
+local Section = Tab:NewSection("AutoHatch coming soon :D")
