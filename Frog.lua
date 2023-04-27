@@ -14,14 +14,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("TOO EZ GUI | Cranium#9090", "Sentinel")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Main")
-Section:NewButton("Collect All Gems", "wtf", function()
-    for i,v in pairs(workspace.Gems:GetDescendants()) do
-    if v:IsA("Part") and v.Parent ~= workspace.Gems then
-        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 0)
-        firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v, 1)
-        end
-    end
-end)
 Section:NewButton("Instant Sell", "wtf", function()
 game.ReplicatedStorage.Sell:FireServer()
 end)
