@@ -51,6 +51,11 @@ local args = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("RedeemCode"):InvokeServer(unpack(args))
 end)
+local args = {
+    [1] = "morexp"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("RedeemCode"):InvokeServer(unpack(args))
+end)
 Section:NewToggle("Kill All Players", "wtf", function(state)
     if state then
         killall = true
