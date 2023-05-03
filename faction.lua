@@ -50,7 +50,6 @@ local args = {
     [1] = "FIREFLAME"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("RedeemCode"):InvokeServer(unpack(args))
-end)
 local args = {
     [1] = "morexp"
 }
